@@ -1,9 +1,13 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This repository is made for a school project using the framework JavaScript React.
 
-Technology : 
+It also uses JavaScript libraries : 
 
-- React 
-- Sass
+- Axios 
+- React-router 
+
+And css methodology : 
+
+- Sass 
 
 
 
