@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Suwannaphum&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
+
+$open: 'Open Sans', sans-serif;
+$Suwanna : 'Suwannaphum', cursive;
+
+
+ H1 { //GROS TITRE
+    font-family: $Suwanna;
+     font-size: 50px;
+     letter-spacing: -8%;
+}
+
+H2 { //TITRE
+     font-family: $open;
+     font-size: 24px;
+     font-weight: 800;
+
+}
+
+H3 {
+     font-family: $open;
+     font-size: 20px;
+     font-weight: 700;
+}
+
+body, p , text {
+     font-family: $open;
+     font-size: 20px;
+     font-weight: 300;
+}
+
+

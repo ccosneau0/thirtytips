@@ -1,0 +1,54 @@
+
+@import "./color.scss";
+@import "./font.scss";
+
+// button => valider les défis  
+button{
+    background-color: $BlueGreen; 
+    border: solid #C4C4C4 0px;
+    outline : none ;  
+    padding : 5px 20px 7px 20px; 
+    text-align: center;
+    font-family: $open; 
+    font-weight: bold;
+    color : white; 
+    font-size: 16px;
+    text-transform: uppercase;
+    border-radius: 19px;
+}
+
+button:hover{
+    background-color : red;
+    color : grey; 
+}
+
+button:active{
+    background : green;
+}
+
+
+// button => valider les défis  
+button.btn{
+    background-color: $GreenTea;
+    border-radius: 25px;
+    text-transform: lowercase;
+}
+
+// button => log 
+button.btn-log {
+    padding : 5px 60px 7px 60px; 
+    font-family: $open;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 25px;
+    text-transform: lowercase;
+    background : #D3D3D3;
+}
+
+button.btn-log:active{
+    background-color: $BlueGreen; 
+    color : white;
+
+}
