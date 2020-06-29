@@ -14,7 +14,7 @@ const App = () => {
           {/* <h1> 30 Steps to change</h1> */}
           <div className="text-wrapper">
             <p>  
-              Adoptez facilement des gestes du quotidien <br/> plus responsable pour limiter votre empreinte  <br/>écologique. 
+              Adoptez facilement des gestes du quotidien  plus responsable pour limiter votre empreinte  écologique. <br/>
               <br/>Commencez dès maintenant et faites un pas de plus pour notre planète.
             </p>
           </div>
