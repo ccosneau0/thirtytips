@@ -6,15 +6,20 @@ import Logo from '../../images/LOGO.svg'
 function Signup() {
   return (
     <div className="Signup">
-      <img src={Logo}></img>
-      <h1> 30 Steps to change</h1>
-      <p>  
-        Adoptez facilement des gestes du quotidien plus responsable <br/>
-        pour limiter votre empreinte écologique.<br/>
-        Commencez dès maintenant et faites un pas de plus <br/>
-        pour notre planète.
+      <img className="signup-logo"src={Logo}></img>
+      <h3> Sign up </h3>
+      <button className="btn-log"> Sign up with google </button>
+      <p>Or sign up with email</p>
+      <input type="email"></input>
+      <input type="password" ></input>
+      <button className="btn-log"> Créer mon compte </button>
+      
+      <p>
+        By signing up, I agree to the Treva Orivacy Policy <br/>
+        and Terms of Service.
       </p>
-      <button className="btn">  <a href={"/registration"} >Créer mon compte</a></button>
+
+      <p>Have an account ? <strong><a>Log in</a> </strong></p>
     </div>
   );
 }
