@@ -4,7 +4,11 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 100px;
+  padding-top: 70px;
+
+  .wording-wrapper{
+    text-align: center;
+  }
 }
 
 .dot {

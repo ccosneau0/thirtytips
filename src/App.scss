@@ -22,12 +22,17 @@
   justify-content: space-around;
   align-items: center;
   margin-bottom : 10px;
-
+ .text-wrapper{
+  width: 449px;
+  height: 145px;
+  //background-color: orchid;
+ }
   p{
     color: $DarkGrey;
     text-align: center;
   }
 }
+
 
 .icon-check{ color :black}
 .landing-image-container{

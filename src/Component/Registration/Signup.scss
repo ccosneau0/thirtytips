@@ -7,7 +7,7 @@
   align-items: center;
   justify-content: space-evenly;
  // height: 720px;
- // padding: 80px 30px 140px 30px;
+  padding: 40px 30px 140px 30px;
   
   p{
     font-family: $KMedium;
@@ -16,13 +16,13 @@
     color: $Grey;
   }
   .signup-logo{
-    width: 70%;
+    width: 39%;
   }
 
   .signup-policy{
     font-family: $KRegular;
   }
-  .btn-log.icon-avatared::before{
+  /* .btn-log.icon-avatared::before{
     color: white !important;
-  }
+  } */
 }

@@ -1,7 +1,7 @@
 import React from 'react';
 import './Signup.scss';
 import Logo from '../../images/LOGO.svg'
-
+ 
 function Signup() {
   return (
     <div className="Signup">
@@ -9,7 +9,7 @@ function Signup() {
      {/*  ne pas prendre en compte button google => impélmentation a venir   */}
       <img className="signup-logo"src={Logo}></img>
       <h3> Sign up </h3>
-      <button className="btn-log"> Sign up with google </button>
+      <button className="btn-log"> GOOGLE not design </button>
       <p>Or sign up with email</p>
       <input type="email" value="entrez votre prénom/pseudo"></input>
       <input type="email"></input>
