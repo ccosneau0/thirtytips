@@ -1,10 +1,9 @@
-@import '../src/style/style.scss';
+@import '../src/style/bigStyle.scss';
 .App {
-  background-color: $grey ;
+  background-color: $LightGrey;
   height :100vh;
   width : 100vw; 
   overflow-x: hidden;
-  background-color: orchid;
   overflow-wrap: break-word
 }
 
@@ -25,14 +24,16 @@
   margin-bottom : 10px;
 
   p{
-    color: $darkGrey;
+    color: $DarkGrey;
     text-align: center;
   }
 }
 
+.icon-check{ color :black}
 .landing-image-container{
   width : 75%;
   padding-bottom: 100px;
+  padding-right: 20px;
   img{
    margin-left : 150px;
    margin-top: 10px; 

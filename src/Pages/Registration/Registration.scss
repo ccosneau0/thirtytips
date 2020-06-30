@@ -1,21 +1,20 @@
-@import"./../../style/style.scss";
-@import"./../../style/font.scss"; 
+@import"./../../style/bigStyle.scss";
+
 .Registration {
-    //background-color : blue;
-    display: flex;
-    flex-direction: row;
-    height :100vh;
-    width : 100vw;
+  //background-color : blue;
+  display: flex;
+  flex-direction: row;
+  height :100vh;
+  width : 100vw;
 
 }
 
 .signup-wrapper{
   width: 40%;
- // background-color: chartreuse;
+  background-color: chartreuse;
 }
 
 .advocacy-wrapper{
-    width: 60%;
-    background-color: $grey;
-
+  width: 60%;
+  background-color: $LightGrey;
 }

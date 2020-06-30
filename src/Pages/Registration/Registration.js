@@ -1,6 +1,5 @@
 import React from 'react';
 import './Registration.scss';
-import '../../style/style.scss'
 import Signup from '../../Component/Registration/Signup';
 import Advocacy from '../../Component/Registration/Advocacy'
 

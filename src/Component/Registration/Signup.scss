@@ -1,27 +1,28 @@
-@import '../../style/style.scss';
+@import '../../style/bigStyle.scss';
+@import '../../style/icomoon/style.scss';
+
 .Signup{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    height: 720px;
-    padding: 80px 30px 140px 30px;
-   
-    p{
-        text-align: center;
-        font-size:14px;
-    }
-    input{
-        text-decoration: none;
-        outline : none ;  
-        width: 300px;
-        height: 50px;
-        background: $grey ;
-        border : none;
-        border-radius :6px;
-    }
-    .signup-logo{
-        
-        width: 70%;
-    }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+ // height: 720px;
+ // padding: 80px 30px 140px 30px;
+  
+  p{
+    font-family: $KMedium;
+    text-align: center;
+    font-size: 14px;
+    color: $Grey;
+  }
+  .signup-logo{
+    width: 70%;
+  }
+
+  .signup-policy{
+    font-family: $KRegular;
+  }
+  .btn-log.icon-avatared::before{
+    color: white !important;
+  }
 }
