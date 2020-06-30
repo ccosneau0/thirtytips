@@ -1,23 +1,17 @@
 import React from 'react';
-import './App.css';
 import UserInfo from './component/dashboard/UserInfo';
 import Tips from './component/dashboard/Tips';
 import DashArticle from './component/dashboard/DashArticle';
-import ToKnow from './component/dashboard/ToKnow';
 
-
-function App() {
-  return (
-    <div className="App">
+const Dashboard = () => {
+  return(
+    <div className="Dashboard">
       <section>
         <UserInfo />
         <Tips />
-        <ToKnow />
         <DashArticle />
       </section>
     </div>
-  );
+  )
 }
-
-
-export default App;
+export default Dashboard;
