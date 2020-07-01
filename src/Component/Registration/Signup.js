@@ -14,7 +14,7 @@ function Signup() {
       <input type="email" value="entrez votre prénom/pseudo"></input>
       <input type="email"></input>
       <input type="password" ></input>
-      <button className="btn-log disabled"> <i className="icon-avatared"></i> <a href={"/registration"} >crée ton compte   </a></button>
+      <button className="btn-log disabled"> <i className="icon-avatared"></i> <a href={"/dashboard"} >crée ton compte   </a></button>
       
       <p className="signup-policy">
         By signing up, I agree to the Treva Orivacy Policy <br/>
