@@ -31,7 +31,6 @@ const DashArticle = () => {
 
 
   return(
-
     <article>
       <h3>
       { todayArticlesTitle }
@@ -40,12 +39,6 @@ const DashArticle = () => {
       { todayArticlesContent }
     </p>
     </article>
-
   )
-
-
-
-
 }
-
 export default DashArticle;

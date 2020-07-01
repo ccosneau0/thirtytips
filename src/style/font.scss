@@ -1,0 +1,108 @@
+@import './color.scss';
+
+@font-face{
+   font-family : 'Karu-Black';
+   src: url('../style/Karu/Karu-Black.ttf')
+}
+
+@font-face{
+  font-family : 'Karu-Black-Italic';
+  src: url('../style/Karu/Karu-BlackItalic.ttf')
+}
+
+@font-face{
+  font-family : 'Karu-Bold';
+  src: url('../style/Karu/Karu-Bold.ttf')
+}
+@font-face{
+  font-family : 'Karu-Bold-Italic';
+  src: url('../style/Karu/Karu-ExtraBoldItalic.ttf')
+}
+
+@font-face{
+  font-family : 'Karu-Extra-Light';
+  src: url('../style/Karu/Karu-ExtraLight.ttf')
+}
+
+@font-face{
+  font-family : 'Karu-Extra-Light-Italic';
+  src: url('../style/Karu/Karu-ExtraLightItalic.ttf')
+}
+
+@font-face{
+  font-family : 'Karu-Italic';
+  src: url('../style/Karu/Karu-Italic.ttf')
+}
+@font-face{
+  font-family : 'Karu-Light';
+  src: url('../style/Karu/Karu-Light.ttf')
+}
+
+@font-face{
+  font-family : 'Karu-light-Italic';
+  src: url('../style/Karu/Karu-LightItalic.ttf')
+}
+
+@font-face{
+  font-family : 'Karu-Medium';
+  src: url('../style/Karu/Karu-Medium.ttf')
+}
+
+@font-face{
+  font-family : 'Karu-Medium-Italic';
+  src: url('../style/Karu/Karu-MediumItalic.ttf')
+}
+@font-face{
+  font-family : 'Karu-Extra-Light';
+  src: url('../style/Karu/Karu-ExtraLight.ttf')
+}
+
+@font-face{
+  font-family : 'Karu-Regular';
+  src: url('../style/Karu/Karu-Regular.ttf')
+}
+
+@font-face{
+  font-family : 'BlackKids';
+  src: url('../style/Black\ Kids.ttf')
+}
+
+$KXLight: 'Karu-Extra-Light';
+$KLight : 'Karu-Light';
+$KRegular : 'Karu-Regular';
+$KMedium : 'Karu-Medium';
+$KBold : 'Karu-Bold';
+$Kidz : 'BlackKids';
+
+
+
+h1 { //GROS TITRE
+  font-family: $KRegular;
+  font-size: 50px;
+}
+
+h2 { //TITRE
+  font-family: $Kidz;
+  font-size: 40px;
+  color : $Pink ;
+}
+
+h3 {
+  font-family: $KLight ;
+  font-size: 40px;
+}
+h4 {
+  font-family: $KLight ;
+  font-size: 32px;
+  color: $DarkGrey;
+}
+
+body, p , text {
+  font-family: $KRegular;
+  font-size: 20px;
+}
+
+input {
+  font-family: $KLight;
+  font-size: 14px;
+}
