@@ -1,6 +1,6 @@
 import React from 'react';
 import './Signup.scss';
-import Logo from '../../images/LOGO.svg'
+import Logo from '../../../images/LOGO.svg'
  
 function Signup() {
   return (

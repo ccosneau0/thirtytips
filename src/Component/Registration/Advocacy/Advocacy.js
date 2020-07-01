@@ -1,9 +1,9 @@
 import React from 'react';
 import './Advocacy.scss';
-import Slide1 from '../../images/slide1.svg';
-import Slide2 from '../../images/slide2.svg';
-import Slide3 from '../../images/slide3.svg';
-import Slide4 from '../../images/slide4.svg';
+import Slide1 from '../../../images/slide1.svg';
+import Slide2 from '../../../images/slide2.svg';
+import Slide3 from '../../../images/slide3.svg';
+import Slide4 from '../../../images/slide4.svg';
 
 
 
