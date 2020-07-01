@@ -1,0 +1,23 @@
+@import"./../../style/bigStyle.scss";
+
+.Advocacy{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 70px;
+
+  .wording-wrapper{
+    text-align: center;
+  }
+}
+
+.dot {
+  cursor: pointer;
+  height: 5px;
+  width: 5px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}

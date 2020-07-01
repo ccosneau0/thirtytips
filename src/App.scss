@@ -1,0 +1,97 @@
+@import '../src/style/bigStyle.scss';
+.App {
+  background-color: $LightGrey;
+  height :100vh;
+  width : 100vw; 
+  overflow-x: hidden;
+  overflow-wrap: break-word
+}
+
+.first-block{
+  display : flex; 
+  flex-direction : row;
+  height : 80%;
+  width : 100%; 
+  background: white 
+}
+
+.landing-cta-container{
+  padding: 100px 0 0 100px;
+  display: flex;
+  flex-direction : column;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom : 10px;
+ .text-wrapper{
+  width: 449px;
+  height: 145px;
+  //background-color: orchid;
+ }
+  p{
+    color: $DarkGrey;
+    text-align: center;
+  }
+}
+
+
+.icon-check{ color :black}
+.landing-image-container{
+  width : 75%;
+  padding-bottom: 100px;
+  padding-right: 20px;
+  img{
+   margin-left : 150px;
+   margin-top: 10px; 
+   height: 90vh;
+  }
+}
+
+
+
+@media screen and (max-width: 800px) {
+  .first-block{
+    overflow-y: hidden;
+    overflow-x: hidden;
+    //background: yellowgreen;
+    display : flex; 
+    flex-direction : column-reverse;
+    align-items: center;
+    height : 100%;
+    width : 100vw; 
+    padding-bottom: 10px;
+  
+  }
+  .landing-image-container {
+    padding-bottom: 0px;
+    width: 75%;
+    margin-bottom: 20px;
+
+    img{
+      margin-top: 0px;
+      margin-left : 0px;
+      height:100% ;
+      width: 100%;  
+    }
+  }
+   .logo{
+    display : none;
+  } 
+  .landing-cta-container{
+    width: 80%;
+    align-items: center;
+    padding: 0px;
+    margin-bottom : 0px;
+    .text-wrapper{
+      border-radius: 9px;
+      padding: 5px;
+      box-shadow: 0px 4px 19px rgba(173, 225, 209, 0.79);
+      margin-bottom: 40px;
+      p{
+        font-size: 16px;
+      }
+    }
+    .btn-log{
+        margin-bottom: 10px;
+    }
+  }
+}

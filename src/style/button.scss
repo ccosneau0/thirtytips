@@ -1,0 +1,90 @@
+@import "./color.scss";
+@import "./font.scss"; 
+@import "./icomoon/style.scss"; 
+
+
+button{
+  border: none;
+  outline : none ;  
+  text-align: center;
+  color : white;  
+  border-radius: 9px;
+  box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.08);
+  a{
+    color : white;  
+    text-decoration: none;
+    white-space: nowrap
+  }
+}
+
+
+// button => SIGN UP 
+.btn-log {
+  padding: 18px 91px 18px 91px;
+  background-color: $BlueGreen;
+  a{
+    margin-left:13px ;
+    font-family: $KRegular; 
+    font-size: 18px;
+   ;
+  } 
+}
+
+.btn-log.disabled {
+  
+  background: $ButtonGrey;
+  a{ 
+    color: $Grey;
+  }
+}
+
+// button => DEFI VALIDÉ
+.btn-valided {
+  padding: 18px 80px 18px 80px;
+  background-color: $Purple;
+  font-family: $KBold; 
+  font-size: 24px;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.btn-to-progress, .btn-to-article {
+ 
+  background-color: $BlueGreen;
+}
+
+.btn-to-progress {
+  padding: 16px 100px 16px 100px;
+  a{
+    font-family: $KBold; 
+    font-size: 24px;
+  }
+}
+
+.btn-to-article {
+  padding: 11.5px 39px 11.5px 39px;
+  a{
+  font-family: $KRegular; 
+  font-size: 20px;
+  }
+}
+
+.btn-to-dash {
+  padding: 10.5px 39px 10.5px 39px;
+  background-color: $BlueGreen;
+  a{
+  font-family: $KBold;  
+  font-size: 20px;
+  }
+}
+
+
+////BANQQUE A BOUTON 
+
+/*
+ <button className="btn-log disabled"> <i className="icon-avatared"></i> <a href={"/registration"} >crée ton compte   </a></button>
+<button className="btn-valided"> J’ai terminé ma mission <i className="icon-check"></i>  </button>
+<button className="btn-to-progress"> <a>Voir le détails des thèmes</a> </button>
+<button className="btn-to-article"> <a>Lire la suite</a> </button>
+<button className="btn-to-dash"> <a>Dashboard</a> </button>
+*/
