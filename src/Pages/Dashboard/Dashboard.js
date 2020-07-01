@@ -1,21 +1,21 @@
 import React from 'react';
-import './Dashboard.scss';
-import '../../Component/Dashboard/SideBar/SideBar'
-import SideBar from '../../Component/Dashboard/SideBar/SideBar';
-import Challenge from '../../Component/Dashboard/Challenge/Challenge';
-function Dashboard() {
-  return (
-    <div className="Dashboard">
-      
-      <div className="challenge-container">
-        <Challenge></Challenge>
-      </div>
-      <div className="sidebar-container">
-        <SideBar></SideBar>
-      </div>
-     
-    </div>
-  );
-}
+import UserInfo from '../../component/dashboard/UserInfo';
+import Tips from '../../component/dashboard/Tips';
+import DashArticle from '../../component/dashboard/DashArticle';
+import ToKnow from '../../component/dashboard/ToKnow';
+import Progress from '../../component/dashboard/Progress';
 
+const Dashboard = () => {
+  return(
+    <div className="Dashboard">
+      <section>
+        <UserInfo />
+        <ToKnow />
+        <Tips />
+        <DashArticle />
+        <Progress />
+      </section>
+    </div>
+  )
+}
 export default Dashboard;
