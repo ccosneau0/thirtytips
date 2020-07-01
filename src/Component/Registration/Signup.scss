@@ -1,0 +1,28 @@
+@import '../../style/bigStyle.scss';
+@import '../../style/icomoon/style.scss';
+
+.Signup{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+ // height: 720px;
+  padding: 40px 30px 140px 30px;
+  
+  p{
+    font-family: $KMedium;
+    text-align: center;
+    font-size: 14px;
+    color: $Grey;
+  }
+  .signup-logo{
+    width: 39%;
+  }
+
+  .signup-policy{
+    font-family: $KRegular;
+  }
+  /* .btn-log.icon-avatared::before{
+    color: white !important;
+  } */
+}
