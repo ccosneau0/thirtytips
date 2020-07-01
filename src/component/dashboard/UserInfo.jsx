@@ -4,10 +4,10 @@ import React, { useState, useEffect } from "react";
 
 
 
-const axios = require('axios');
 
 const UserInfo = () => {
-
+  
+  const axios = require('axios');
   let [ userName, setUserName ] = useState('');
   let [ challenge, setChallenge ] = useState('');
   let [day, setDay] = useState(1);
@@ -16,6 +16,7 @@ const UserInfo = () => {
       setDay(day + 1);
     }
   }
+  const DayContext = React.createContext(day);
   
   
 
@@ -38,7 +39,7 @@ const UserInfo = () => {
         });
     }
     fetchData();
-  },[day])
+  },[ day ])
 
 
   
@@ -48,17 +49,17 @@ const UserInfo = () => {
    
   return (
     <section>
-      <p>
+      <p user={ day }>
         Step { day }
       </p>
       <p>
-        Salut { userName } !
+        Salut { userName } 
       </p>
       <p>
-        { challenge }
+        Aujourd'hui { challenge } !
       </p>
       <button onClick={ handleChange }>
-        validé 
+        J'ai terminé ma mission
       </button>
     </section>
  

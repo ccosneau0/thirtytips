@@ -14,14 +14,8 @@ const Tips = () => {
         responseType: 'json'
       })
         .then(function (response) {
-          // let todayTips = response.data[0];
-          // console.log(todayTips);
-          // setTodayTips(todayTips => [...todayTips]);
-          // let listTips = todayTips.map(todayTip => 
-          //   <li>
-          //     { todayTip }
-          //   </li>  
-          // );
+          let todayTips = response.data[0].body;
+          setTodayTips(todayTips);
         })
         .catch(function (error) {
           console.log(error);
@@ -33,10 +27,14 @@ const Tips = () => {
   
 
   return (
-
+    <section>
+      <h2>Tips pour vous aider à réaliser votre defi du jour</h2>
     <ul>
+      <li>
       { todayTips }
+      </li>
     </ul>
+    </section>
 
   )
 }

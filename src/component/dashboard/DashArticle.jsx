@@ -19,7 +19,7 @@ const DashArticle = () => {
           let todayArticlesTitle = response.data[0].title;
           let todayArticlesContent = response.data[0].body;
           setTodayArticlesTitle(todayArticlesTitle);
-          setTodayArticlesContent(todayArticlesContent)
+          setTodayArticlesContent(todayArticlesContent);
           console.log(todayArticlesTitle);
         })
         .catch(function (error) {
