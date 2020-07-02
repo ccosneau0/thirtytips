@@ -1,46 +1,51 @@
 @import '../../style/bigStyle.scss';
 
 .Progression{
-    width : 100vw;
-    height: 100vh;
-    display: flex;
-    flex-direction : column;
-    //justify-content: space-between;
-    //background: khaki; 
-    overflow-y: hidden;
+  width : 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction : column;
+  overflow-y: hidden;
 }
 
 .top-wrapper{
-    //background : chocolate;
-    width : 100%;
-    height: 40%;
-   /// padding-left : 50px;
-    display: flex;
-    flex-direction : row;
-    //justify-content: space-between;
+  width : 100%;
+  height: 40%;
+  display: flex;
+  flex-direction : row;
 }
 .side-wrapper {
-    width: 50%;
-    //background: cyan;
+  width: 50%;
 }
 
 .state-wrapper {
-    //width: 50%;
-    padding-top:  39px;
-    padding-left: 120px;
-   // background: yellow;
+  padding-top:  39px;
+  padding-left: 120px;
 }
+
 .bottom-wrapper{
-    //background : green;
-    //width : 100%;
-    padding-left: 120px;
-    padding-right: 120px;
-    //padding-bottom: 56px;
-    //padding-top: 10px;
+  padding-left: 120px;
+  padding-right: 120px;
+}
+ .KOKOKO{
+  margin-top: -20px;
+} 
+.info-wrapper{
+  display: flex;
+  flex-direction : row;
+  margin-left : 59%;
+}
+.logo-progression{
+  width: 133.78px;
+  height: 65.62px;
+ 
+  margin-top: 20px;
 }
 
-
- .KOKOKO{
-    margin-top: 61px;
-   
-} 
+.profile-container{
+  margin-top: 20px;
+  margin-left : 20px;
+  width: 200px;
+  height: 59px;
+  background : black;
+}

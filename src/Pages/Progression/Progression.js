@@ -2,7 +2,8 @@ import React from 'react';
 import './Progression.scss';
 import  GradeLevel from '../../Component/Progression-Componenent/GRADES/Card wrapper/GradeLevel';
 import StripProfil from '../../Component/Progression-Componenent/Strip profil/SripProfil';
-import illuProgression from '../../images/progression-illu.svg'
+import illuProgression from '../../images/progression-illu.svg';
+import LOGO from '../../images/LOGO.svg'
 function Progression() {
   return (
     <div className="Progression">
@@ -19,7 +20,11 @@ function Progression() {
           </div>
         </div>
         <div className="side-wrapper">
-          <img  className="KOKOKO"src={illuProgression} alt=""></img> 
+          <div className="info-wrapper">
+          <img  className="logo-progression"src={LOGO} alt="logo"></img> 
+          <div className="profile-container"></div>
+          </div>
+          <img  className="KOKOKO"src={illuProgression} alt="illustration"></img> 
         </div>
       </div>
       <div className="bottom-wrapper">
