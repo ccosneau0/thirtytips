@@ -1,0 +1,29 @@
+@import '../../../../style/bigStyle.scss';
+.grade-card {
+    width: 377.9px;
+    height: 242.89px;
+    display: flex; 
+    flex-direction : row;
+    align-items: center;
+    justify-content: space-around;
+    background: #FFFFFF;
+    border: 2px solid black;
+    box-sizing: border-box;
+    border-radius: 14px;  
+    margin-bottom: 26px;
+    margin-right: 90px;
+  }
+  
+  .listing{
+    background: blue; 
+    height: 100%;
+    title{
+      color : red;
+    }
+  }
+  
+  .illu-wrapper{
+    height: 100%;
+    background-color: paleturquoise;
+  }
+  

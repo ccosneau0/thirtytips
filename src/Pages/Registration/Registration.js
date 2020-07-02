@@ -1,7 +1,7 @@
 import React from 'react';
 import './Registration.scss';
-import Signup from '../../component/Registration/Signup';
-import Advocacy from '../../component/Registration/Advocacy';
+import Signup from '../../Component/Registration/Signup/Signup';
+import Advocacy from '../../Component/Registration/Advocacy/Advocacy';
 
 function Registration() {
   return (

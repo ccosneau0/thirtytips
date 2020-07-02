@@ -1,0 +1,13 @@
+@import '../../../../style/bigStyle.scss';
+
+.GradeLevel {
+  //width: 80%;
+ // background: orchid;
+  display: flex;
+  flex-direction: row;
+  //justify-content: space-between;
+  flex-wrap: wrap;
+  //margin-top: 35px
+}
+
+

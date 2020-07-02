@@ -1,9 +1,9 @@
 import React from 'react';
-import UserInfo from '../../component/dashboard/UserInfo';
-import Tips from '../../component/dashboard/Tips';
-import DashArticle from '../../component/dashboard/DashArticle';
-import ToKnow from '../../component/dashboard/ToKnow';
-import Progress from '../../component/dashboard/Progress';
+import UserInfo from '../../Component/Dashboard/UserInfo';
+import Tips from '../../Component/Dashboard/Tips';
+import DashArticle from '../../Component/Dashboard/DashArticle';
+import ToKnow from '../../Component/Dashboard/ToKnow';
+import Progress from '../../Component/Dashboard/Progress';
 
 const Dashboard = () => {
   return(
