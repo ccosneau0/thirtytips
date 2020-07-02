@@ -1,0 +1,46 @@
+@import '../../style/bigStyle.scss';
+
+.Progression{
+    width : 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction : column;
+    //justify-content: space-between;
+    //background: khaki; 
+    overflow-y: hidden;
+}
+
+.top-wrapper{
+    //background : chocolate;
+    width : 100%;
+    height: 40%;
+   /// padding-left : 50px;
+    display: flex;
+    flex-direction : row;
+    //justify-content: space-between;
+}
+.side-wrapper {
+    width: 50%;
+    //background: cyan;
+}
+
+.state-wrapper {
+    //width: 50%;
+    padding-top:  39px;
+    padding-left: 120px;
+   // background: yellow;
+}
+.bottom-wrapper{
+    //background : green;
+    //width : 100%;
+    padding-left: 120px;
+    padding-right: 120px;
+    //padding-bottom: 56px;
+    //padding-top: 10px;
+}
+
+
+ .KOKOKO{
+    margin-top: 61px;
+   
+} 

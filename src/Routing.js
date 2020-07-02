@@ -3,7 +3,7 @@ import { Switch, BrowserRouter, Route, browserHistory} from 'react-router-dom';
 import App from "./App";
 import Registration from "./Pages/Registration/Registration";
 import Dashboard from "./Pages/Dashboard/Dashboard";
-import Progress from "./Pages/Progress/Progress";
+import Progression from "./Pages/Progression/Progression";
 class Routing extends Component {
   render() {
     return (
@@ -12,7 +12,7 @@ class Routing extends Component {
           <Route exact path='/' component={App} />
           <Route exact path='/registration' component={Registration} />
           <Route exact path='/dashboard'  component={Dashboard} />
-          <Route exact path='/Progress'  component={Progress} />
+          <Route exact path='/Progression'  component={Progression} />
 
         </Switch>
       </BrowserRouter>
