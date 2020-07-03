@@ -44,14 +44,25 @@
 
 .profile-container{
   margin-top: 20px;
-  margin-left : 20px;
-  width: 200px;
+  margin-left : 40px;
+  /* width: 200px;
   height: 59px;
-  background : black;
+  background : black; */
 }
 
 .arrow{
   position: absolute;
   margin-top: 20px;
   margin-left : 30px;
+}
+
+.BlueBubble{
+  width: 67.11px;
+  height: 67.11px;
+  border-radius: 67.11px;;
+  background: #BAC4F6;
+  position: absolute;
+  margin-left: 415px;
+  margin-top: 10px;
+  z-index: -2;
 }
