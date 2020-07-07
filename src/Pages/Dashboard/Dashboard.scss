@@ -1,9 +1,28 @@
+@import '../../../reset.scss';
+@import '../../style/font.scss';
+@import '../../style/color.scss';
+
+$twovw: 2vw;
+$threevw: 3vw;
+$onevh: 1vh;
+$twovh:2vh;
+$threevh: 3vh;
+$radiusNine: 9px;
+
+// TODO: Progess --> taille font/espace responsive + espace du button à modif (margin) / revoir zone tips / box-shadow !!!!!
+
+
 .Dashboard{
-  display: flex; 
-  flex-direction: row;
   height :100vh;
   width : 100vw;
-  background-color : blue;
+  display: flex;
+}
+
+.dashboard-second{
+  width: 35vw;
+  margin-left: $twovw;
+  box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.10);
+  border-radius: $radiusNine;
 }
 
 .sidebar-container{
@@ -14,4 +33,251 @@
 .challenge-container{
   width: 100%;
   height: 100%
+}
+
+//UserInfo
+.user-info{
+  margin-left: $threevw;
+  margin-top: $threevh;
+  width: 59vw;
+  height: 29vh;
+  border-radius: $radiusNine;
+  box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.10);
+}
+
+.step{
+  font-size: 20px;
+  font-family: $KBold;
+  color: #7D7D7D;
+  margin-left: $twovw;
+  padding-top: $onevh;
+}
+
+.step-number{
+  font-family: $KRegular;
+}
+
+.user-name{
+  margin-left: $twovw;
+  margin-top: $twovh;
+}
+
+
+.challenge{
+  margin-left: $twovw;
+  margin-top: $twovh;
+  font-size: 36px;
+  font-family: $KBold;
+  margin-bottom: $twovh;
+}
+
+.challenge-light{
+  font-family: $KLight;
+}
+
+.logo-valided{
+  width: 10%;
+  margin-left: 4%;
+}
+
+.bubbles{
+  width: 35%;
+  position: absolute;
+  left: 28vw;
+  top: $onevh;
+}
+// End UserInfo
+
+// ToKnow
+.toknow{
+  width: 59vw;
+  border-radius: $radiusNine;
+  box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.10);
+  margin-left: 3vw;
+  margin-top: $threevh;
+}
+
+.toknow-title{
+  color: $Pink;
+  margin-left: $twovw;
+  padding-top: $onevh;
+  padding-bottom: $onevh;
+}
+
+.toknow-title-black{
+  color: black;
+}
+// End ToKnow
+
+// Tips
+.tips-title{
+  margin-left: $threevw;
+  margin-top: $threevh;
+}
+
+.tips{
+  width: 59vw;
+  height: 15vh;
+  background-color: $Purple;
+  margin-left: $threevw;
+  margin-top: $twovh;
+  border-radius: $radiusNine;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 16px;
+  text-align: center;
+  list-style: none;
+  font-family: $KLight;
+}
+
+.tips-content{
+  background-color: white;
+  width: 17vw;
+  height: 10vh;
+  border-radius: $radiusNine;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tips-content-text{
+  width: 16vw;
+  font-family: $KLight;
+}
+// End tips
+
+// DashArticle
+.article{
+  width: 59vw;
+  margin-left: $threevw;
+  margin-top: $twovh;
+}
+
+.article-first{
+  font-size: 23px;
+  font-family: $KLight;
+}
+
+.article-cards{
+  display: flex;
+  justify-content: space-between;
+  margin-top: $onevh;
+}
+
+.article-card{
+  width: 28.5vw;
+  height: 28vh;
+  border-radius: $radiusNine;
+  box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.10);
+}
+
+.article-title{
+  font-size: 22px;
+  font-family: $KRegular;
+  margin-left: $twovw;
+  margin-top: $onevh;
+}
+
+.article-author{
+  font-family: $KXLight;
+  font-size: 13px;
+  margin-left: $twovw;
+  margin-top: $onevh;
+}
+
+.article-content{
+  font-size: 17px;
+  font-family: $KLight;
+  margin-left: $twovw;
+  width: 23vw;
+  margin-top: $onevh;
+  margin-bottom: $twovh;
+}
+// End DashArticle
+
+// Logo
+.logo{
+  width: 20vh;
+  margin-left: 1vw;
+  margin-top: $twovh;
+}
+// End Logo
+
+// Progress
+// NumberChallenge
+.number-challenge{
+  width: 30vw;
+  margin-left: $twovw;
+  margin-top: 5vh;
+}
+
+.number-challenge-title{
+  font-size: 24px;
+  font-family: $KLight;
+}
+
+.number-challenge-card{
+  margin-top: 2vh;
+  box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.10);
+  border-radius: $radiusNine;
+  height: 15vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.number-challenge-content{
+  font-size: 56px;
+  font-family: $KLight;
+  margin-left: 4vw;
+  color: #7D7D7D;
+}
+
+.number-challenge-theme{
+  font-size: 16px;
+  font-family: $KLight;
+  color: #858585;
+  margin-left: 4vw;
+  margin-top: $onevh;
+}
+
+.logo-feuilles{
+  width: 12vw;
+  position: absolute;
+  right: 0vw;
+  top: 20vh;
+}
+// End NumberChallenge
+
+.progress{
+  margin-left: $twovw;
+  margin-top: $threevh;
+}
+
+.progress-cards{
+  display: flex;
+}
+
+.progress-icone{
+  width: 12%;
+  margin-top: $twovh;
+}
+
+.progress-info{
+  margin-left: 1vw;
+}
+
+.progress-title{
+  font-size: 19px;
+  font-family: $KBold;
+  margin-top: $twovh;
+}
+
+.progress-content{
+  font-size: 14px;
+  font-family: $KBold;
+  color: #DEDEDE;
+  width: 21vw;
+  margin-top: 0.7vh;
 }

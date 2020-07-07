@@ -1,5 +1,5 @@
 import React from 'react';
-import './Progress.scss';
+import './Progression.scss';
 
 
 function Progress() {

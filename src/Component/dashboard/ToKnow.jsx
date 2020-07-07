@@ -1,5 +1,4 @@
 import React, { useState, useEffect, useContext } from 'react';
-import DayContext from './UserInfo';
 
 const ToKnow = () => {
   
@@ -25,7 +24,9 @@ const ToKnow = () => {
   }, [])
   
   return(
-    <p>À savoir : { toKnow }</p>
+    <section className="toknow">
+      <p className="toknow-title">À savoir : <span className="toknow-title-black">{ toKnow }</span></p>
+    </section>
   )
 }
 export default ToKnow;
