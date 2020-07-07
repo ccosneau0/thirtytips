@@ -4,6 +4,7 @@ It also uses JavaScript libraries :
 
 - Axios 
 - React-router 
+- react-slideshow (=> https://github.com/femioladeji/react-slideshow)
 
 And css methodology : 
 
