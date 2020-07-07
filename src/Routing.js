@@ -13,7 +13,6 @@ class Routing extends Component {
           <Route exact path='/registration' component={Registration} />
           <Route exact path='/dashboard'  component={Dashboard} />
           <Route exact path='/Progression'  component={Progression} />
-
         </Switch>
       </BrowserRouter>
     )

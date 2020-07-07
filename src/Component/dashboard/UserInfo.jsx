@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
-
-
-
+import Valided from '../../images/Valided.png';
+import Bubbles from '../../images/bubbles.png';
 
 
 
@@ -48,18 +47,19 @@ const UserInfo = () => {
 
    
   return (
-    <section>
-      <p user={ day }>
-        Step { day }
+    <section className="user-info">
+      <img className="bubbles" src={ Bubbles } alt="bulles de couleurs"/>
+      <p className="step">
+        Step <span className="step-number">{ day }</span>
       </p>
-      <p>
+      <h2 className="user-name">
         Salut { userName } 
+      </h2>
+      <p className="challenge">
+        Aujourd'hui <span className="challenge-light">{ challenge }</span>
       </p>
-      <p>
-        Aujourd'hui { challenge } !
-      </p>
-      <button onClick={ handleChange }>
-        J'ai terminé ma mission
+      <button className="btn-valided" onClick={ handleChange }>
+        J'ai terminé ma mission <img className="logo-valided" src={ Valided } alt="icone valider blanc"/>
       </button>
     </section>
  

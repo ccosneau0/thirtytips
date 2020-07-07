@@ -1,8 +1,8 @@
 import React from 'react';
 import './Dashboard.scss';
-import '../../component/SideBar/SideBar'
-import SideBar from '../../component/SideBar/SideBar';
-import Challenge from '../../component/Challenge/Challenge';
+import '../../Component/SideBar/SideBar'
+import SideBar from '../../Component/SideBar/SideBar';
+import Challenge from '../../Component/Challenge/Challenge';
 function Dashboard() {
   return (
     <div className="Dashboard">
