@@ -85,6 +85,7 @@ h2 { //TITRE
   font-family: $Kidz;
   font-size: 40px;
   color : $Pink ;
+  line-height: 10px;
 }
 
 h3 {
@@ -95,11 +96,13 @@ h4 {
   font-family: $KLight ;
   font-size: 32px;
   color: $DarkGrey;
+  line-height: 10px;
 }
 
 body, p , text {
   font-family: $KRegular;
   font-size: 20px;
+  color: $DarkGrey;
 }
 
 input {

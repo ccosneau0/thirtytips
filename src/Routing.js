@@ -12,8 +12,7 @@ class Routing extends Component {
           <Route exact path='/' component={App} />
           <Route exact path='/registration' component={Registration} />
           <Route exact path='/dashboard'  component={Dashboard} />
-          <Route exact path='/Progress'  component={Progression} />
-
+          <Route exact path='/Progression'  component={Progression} />
         </Switch>
       </BrowserRouter>
     )

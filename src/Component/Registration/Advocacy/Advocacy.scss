@@ -1,0 +1,27 @@
+@import"./../../../style/bigStyle.scss";
+
+.Advocacy{
+  background :  #F7F8FA;
+  align-items: center;
+  padding-top: 70px; 
+}
+
+ .each-slide{
+  background : #F7F8FA; 
+  height: 85vh;
+  margin-left: 150px;
+  .wording-wrapper{
+    text-align: center;
+    margin-top : 550px;
+    position: absolute;
+    margin-left: 80px
+  }  
+} 
+ .each-slide img{
+  margin-left: auto;
+  margin-right: auto;
+} 
+ .trying{
+  height : 600px;
+  background: no-repeat;
+} 

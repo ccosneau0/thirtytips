@@ -6,6 +6,7 @@ import ToKnow from '../../Component/Dashboard/ToKnow';
 import Progress from '../../Component/Dashboard/Progress';
 import './Dashboard.scss';
 
+
 const Dashboard = () => {
   return(
     <div className="Dashboard">
