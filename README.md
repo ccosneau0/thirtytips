@@ -1,12 +1,15 @@
-
+Adresse du site: https://thirtysteps.netlify.app/
 
 Ce repository est destiné à des fins scolaires.
+
 
 Nous avons fait le choix du framewoork React.JS, pour une gestion plus simple de l'ensemble des components. 
 En effet, notre projet est composé de nombreux petites pièces de code, en appliqquant une architecture rigoureuse, en découpant méticuleusement nos pages, nous avons ,grâce à React.Js, un site qui s'adapte plus facilement. 
 Par plus facilement nous entendons : le fait de lier une fonctionnalité à un componentst. Limiter chaque componentsà 100 lignes de code. Créer une dynamique d'adpatation, de réutilisatation et d'agilité  des components.
  Gagner du temps en terme de déveleppement pure, pour passer plus de temps sur l'architechture du site. 
 Notre architecture se définit comme telle, une page a son dossier - JS + SASS - cette page a des components => dossier components : nom de la page => sous dossier comportant les dossiers de chaque components (Component.JS + SASS)
+
+
 
 
 It also uses JavaScript libraries : 
