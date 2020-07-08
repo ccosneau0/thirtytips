@@ -22,7 +22,7 @@ const properties = {
   indicators: true,
   arrows: true,
   pauseOnHover: true,
-  marginLeft: 300,
+  //marginLeft: 300,
   onChange: (oldIndex, newIndex) => {
     console.log(`slide transition from ${oldIndex} to ${newIndex}`);
   }
@@ -88,6 +88,16 @@ const Advocacy = () =>  {
           </div>
         </div>  
       </Slide>
+      <div className="to-subscribe">
+      <svg viewBox="0 0 500 500">
+        <path id="curve" d="M73.2,148.6c4-6.1,65.5-96.8,178.6-95.6c111.3,1.2,170.8,90.3,175.1,97" />
+          <text width="500">
+          <textPath href="#curve">
+            Swipe pour t'inscrire 
+            </textPath>
+          </text>
+      </svg>
+      </div>
     </div>
   );
 }

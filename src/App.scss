@@ -1,94 +1,137 @@
 @import '../src/style/bigStyle.scss';
 .App {
-  background-color: $LightGrey;
   height :100vh;
   width : 100vw; 
   overflow-x: hidden;
-  overflow-wrap: break-word
+  overflow-wrap: break-word;
+  display: flex;
+  flex-direction: column;
 }
 
-.first-block{
-  display : flex; 
-  flex-direction : row;
-  height : 80%;
+ .landing-illustration{
+  position: absolute;
+  z-index : -1;
+  height : 90%; 
   width : 100%; 
-  background: white 
-}
+  img{
+    width : 100%; 
+    height: 90%;
+  }  
+} 
 
 .landing-cta-container{
+  width : 40%; 
+  height: 80%;
   padding: 100px 0 0 100px;
+  position : relative;
   display: flex;
   flex-direction : column;
-  justify-content: space-around;
-  align-items: center;
-  margin-bottom : 10px;
+  align-items: flex-start;
+ 
  .text-wrapper{
-  width: 449px;
-  height: 145px;
- }
-  p{
-    color: $DarkGrey;
+  //margin-bottom: 120px!important;
+  display: flex;
+  flex-direction : column;
+  align-items: center;
+ 
+    p{
+      color: $DarkGrey;
+      font-family: $KXLight;
+      font-size: 26px;
+    }
+    .earth{
+      font-family: $KRegular;
+      font-size: 29px;
+      line-height: 0em;
+    }
+  }
+  .userLink{
+    font-size: 16px;
     text-align: center;
+  /*  margin-left: -112px */
   }
 }
 
-
-.icon-check{ color :black}
-.landing-image-container{
-  width : 75%;
-  padding-bottom: 100px;
-  padding-right: 20px;
-  img{
-   margin-left : 150px;
-   margin-top: 10px; 
-   height: 90vh;
+.gris{
+  height :141px;
+  width : 100vw;
+  background : #F7F8FA;
+  z-index : -1;
+}
+.footer {
+  height :100px;
+  width:93%;
+  background : aquamarine;
+  overflow: hidden;
+ 
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px 64px 0 64px;
+ p{ color : white;
+   font-family: $KMedium;
+  }
+  .socialMedia{
+  width: 160px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   }
 }
 
 @media screen and (max-width: 800px) {
-  .first-block{
-    overflow-y: hidden;
-    overflow-x: hidden;
-    //background: yellowgreen;
-    display : flex; 
-    flex-direction : column-reverse;
-    align-items: center;
-    height : 100%;
-    width : 100vw; 
-    padding-bottom: 10px;
-  
-  }
-  .landing-image-container {
-    padding-bottom: 0px;
-    width: 75%;
-    margin-bottom: 20px;
 
-    img{
-      margin-top: 0px;
-      margin-left : 0px;
-      height:100% ;
-      width: 100%;  
+  .App{
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    overflow-y: hidden;
+    .landing-illustration {
+      height : 100%;
+      width: 100%;
+      background-image: url('./images/landing-illu-mobile.svg');
+      background-size: 100%;
+      background-repeat: no-repeat;
+      background-position: top 37px left 13px;
+      z-index: -2;
+      img{ 
+        display: none;
+      }
     }
   }
-   .logo{
-    display : none;
-  } 
+
+  .logo{
+    margin-bottom : 50px;
+  }
+
   .landing-cta-container{
-    width: 80%;
+    margin-top : 30%;
+    width: 90%;
+    height: 80vh;
     align-items: center;
     padding: 0px;
-    margin-bottom : 0px;
+    margin-bottom : 150px;
     .text-wrapper{
       border-radius: 9px;
       padding: 5px;
       box-shadow: 0px 4px 19px rgba(173, 225, 209, 0.79);
       margin-bottom: 40px;
-      p{
+      p, .earth {
         font-size: 16px;
       }
     }
     .btn-log{
         margin-bottom: 10px;
     }
+    .userLink{
+      font-size: 16px;
+    }
+  }
+  .gris{
+    display: none;
+  }
+
+  .footer{
+    display : none;
   }
 }
