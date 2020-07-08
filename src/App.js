@@ -14,16 +14,18 @@ const App = () => {
     ////LANDING////
     <div className="App">
          
-      <div className="landing-cta-container">
+        <div className="landing-cta-container">
           <img className="logo" src={Logo} alt="okok"></img>
          
           <div className="text-wrapper">
             <p>  
-              Adoptez facilement des gestes du quotidien  plus responsable pour limiter votre empreinte écologique. <br/>
-              <br/>Commencez dès maintenant et faites un pas de plus pour <br/>notre planète.
-            </p>
+              Adoptez facilement des <strong>gestes du quotidien </strong>  plus responsable pour <strong>limiter votre empreinte écologique.</strong> <br/>
+              <br/>Commencez dès maintenant et faites un pas de plus pour<span className="earth"> notre planète.</span><br/>
+            </p> 
           </div>
+          
           <button className="btn-log"> <i className="icon-avatared"></i> <a href={"/registration"} >crée ton compte</a></button>
+          <p className="userLink">Tu as déja un compte ?  <a href='/ConnexionUser'><strong>Log in</strong></a></p>
         </div>
        
         <div className="gris"> </div>
@@ -45,22 +47,3 @@ const App = () => {
   );
 };
 export default App;
-
-{/* <div className="first-block">
-        <div className="landing-cta-container">
-          <img className="logo" src={Logo} alt="okok"></img>
-         
-          <div className="text-wrapper">
-            <p>  
-              Adoptez facilement des gestes du quotidien  plus responsable pour limiter votre empreinte  écologique. <br/>
-              <br/>Commencez dès maintenant et faites un pas de plus pour notre planète.
-            </p>
-          </div>
-          <button className="btn-log"> <i className="icon-avatared"></i> <a href={"/registration"} >crée ton compte</a></button>
-        </div>
-
-        <div className="landing-image-container">
-          <img src={landimg} alt="okok"></img>
-        </div> 
-      </div> */}
-          
