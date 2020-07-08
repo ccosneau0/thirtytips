@@ -16,7 +16,7 @@ const DashArticle = () => {
         responseType: 'json'
       })
         .then(function (response) {
-          let todayArticlesTitle = response.data[0].title;
+          let todayArticlesTitle = response.data[2].title;
           let todayArticlesContent = response.data[0].body;
           setTodayArticlesTitle(todayArticlesTitle);
           setTodayArticlesContent(todayArticlesContent);
@@ -31,13 +31,31 @@ const DashArticle = () => {
 
 
   return(
-    <article>
-      <h3>
-      { todayArticlesTitle }
-    </h3>
-    <p>
-      { todayArticlesContent }
-    </p>
+    <article className="article">
+      <h4 className="article-first">Articles susceptible de vous intérésser ...</h4>
+      <div className="article-cards">
+        <div className="article-card">
+          <h3 className="article-title">
+            { todayArticlesTitle }
+          </h3>
+          <p className="article-author">GreenPeace</p>
+          <p className="article-content">
+            { todayArticlesContent }
+          </p>
+          <button className="btn-to-article">Lire la suite</button>
+        </div>
+        <div className="article-card">
+          <h3 className="article-title">
+            { todayArticlesTitle }
+          </h3>
+          <p className="article-author">GreenPeace</p>
+          <p className="article-content">
+            { todayArticlesContent }
+          </p>
+          <button className="btn-to-article">Lire la suite</button>
+        </div>
+      </div>
+      
     </article>
   )
 }

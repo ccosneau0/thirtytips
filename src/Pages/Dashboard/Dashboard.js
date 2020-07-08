@@ -4,15 +4,19 @@ import Tips from '../../Component/Dashboard/Tips';
 import DashArticle from '../../Component/Dashboard/DashArticle';
 import ToKnow from '../../Component/Dashboard/ToKnow';
 import Progress from '../../Component/Dashboard/Progress';
+import './Dashboard.scss';
+
 
 const Dashboard = () => {
   return(
     <div className="Dashboard">
-      <section>
+      <section className="dashboard-first">
         <UserInfo />
         <ToKnow />
         <Tips />
         <DashArticle />
+      </section>
+      <section className="dashboard-second">
         <Progress />
       </section>
     </div>

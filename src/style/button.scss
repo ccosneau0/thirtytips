@@ -41,12 +41,14 @@ button{
 
 // button => DEFI VALIDÉ
 .btn-valided {
-  padding: 18px 80px 18px 80px;
+  padding: 15px 80px 15px 80px;
   background-color: $Purple;
   font-family: $KBold; 
   font-size: 24px;
   text-decoration: none;
   white-space: nowrap;
+  margin-left: 2vw;
+  margin-top: -2px;
 }
 
 .btn-to-progress, .btn-to-article {
@@ -55,7 +57,10 @@ button{
 }
 
 .btn-to-progress {
-  padding: 16px 100px 16px 100px;
+  width: 23vw;
+  height: 6vh;
+  margin-top: 3vh;
+  margin-left: 3.5vw;
   a{
     font-family: $KBold; 
     font-size: 24px;
@@ -63,7 +68,9 @@ button{
 }
 
 .btn-to-article {
-  padding: 11.5px 39px 11.5px 39px;
+  width: 10vw;
+  height: 5vh;
+  margin-left: calc(50% - 5vw);
   a{
   font-family: $KRegular; 
   font-size: 20px;
