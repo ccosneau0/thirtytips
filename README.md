@@ -2,8 +2,8 @@
 
 Ce repository est destiné à des fins scolaires.
 
-Nous avons fait le choix du framewoork React.JS, pour une gestion plus simple de l'ensemble des composants. 
-En effet, notre projet est composé de nombreux petites pièces de code, en appliqquant une architecture rigoureuse, en découpant méticuleusement nos pages, nous avons grâce à React.Js, un site qui s'adapte plus facilement. 
+Nous avons fait le choix du framework React.JS, pour une gestion plus simple de l'ensemble des composants. 
+En effet, notre projet est composé de nombreuses petites pièces de code, en appliquant une architecture rigoureuse, en découpant méticuleusement nos pages, nous avons grâce à React.Js, un site qui s'adapte plus facilement. 
 Par plus facilement nous entendons : le fait de lier une fonctionnalité à un composant. Limiter chaque composant à 100 lignes de code. Créer une dynamique d'adpatation, de réutilisatation et d'agilité  des components. Gagner du temps en terme de develeppemnt pure, pour passer plus de temps sur l'architechture du site. 
 Notre architecture se définie comme telle, une page a son dossier - JS + SASS - cette page a des compomnenent => dossier component : nom de la page  sous dossier comportant les dossiers de chaque compotent (Component.JS + SASS)
 
