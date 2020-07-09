@@ -55,7 +55,7 @@
       border-radius: 50%; */
       display: block;
     // margin-top: -120px;
-      margin-left: 50%;
+      margin-left: 55%;
       path {
         fill: transparent;
       }
@@ -76,11 +76,16 @@
       background-size: 100%;
       .wording-wrapper{
         width: 100%;
+       
         h4{
           font-size: 20px;
+          margin-bottom: 10px;
+          margin-top: -150px!important;
         }
         p{
           font-size: 16px;
+          line-height: 20px;
+          
         }
       } 
     }

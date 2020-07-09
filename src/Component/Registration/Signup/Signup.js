@@ -127,7 +127,7 @@ import Logo from '../../../images/LOGO.svg'
           id="name" 
           name="name"
           /* value={ userName }  */
-          placeholder="entrez votre prénom"
+          placeholder="entre ton prénom"
           /* onChange={changeHanler} */
          />
         <label htmlFor="email"></label>
@@ -136,7 +136,7 @@ import Logo from '../../../images/LOGO.svg'
           id="email"  
           name="email"  
           /* value={email}   */
-          placeholder="entrez votre adresse e-mail"
+          placeholder="entre ton adresse e-mail"
           /* onChange={changeHanler} */
         />
         <label htmlFor="pwd"></label>
@@ -145,7 +145,7 @@ import Logo from '../../../images/LOGO.svg'
           id="pwd"  
           name="password"  
           /* value={password}  */ 
-          placeholder="entrez votre mot de passe"
+          placeholder="entre ton  mot de passe"
           /* onChange={changeHanler} */
         />
         <button  type="submit" className="btn-log disabled"> <i className="icon-avatared"></i>  <a href={"/dashboard"} > crée ton compte   </a></button>

@@ -15,22 +15,24 @@ function LogUser() {
       <p>Or sign up with email</p> */}
       {/* <label for="pseudo"></label>
       <input type="text" id="pseudo" placeholder="entrez votre prénom/pseudo"></input> */}
-      <label for="email"></label>
-      <input type="email"  id="email" placeholder="entrez votre adresse e-mail"></input>
-      <label for="pwd"></label>
-      <input type="password" id="pwd" placeholder="entrez votre mot de passe" ></input>
-      <button className="btn-log disabled"> <i className="icon-avatared"></i> <a href={"/dashboard"} >crée ton compte   </a></button>
-      
+      <form>
+        <label for="email"></label>
+        <input type="email"  id="email" placeholder="entre ton  adresse e-mail"></input>
+        <label for="pwd"></label>
+        <input type="password" id="pwd" placeholder="entre ton mot de passe" ></input>
+        <button  type="submit" className="btn-log disabled"> <i className="icon-avatared"></i> <a href={"/dashboard"} >crée ton compte   </a></button>
+      </form>
       <p className="signup-policy">
         By signing up, I agree to the Treva Orivacy Policy <br/>
         and Terms of Service.
+        <p> Tu n'as pas de compte ? <a href='/Registration'><strong> Crée le ! </strong></a></p>
       </p>
 
       
-      <p> Tu n'as pas de compte ? <a href='/Registration'><strong> Crée le ! </strong></a></p>
+      
       
 
-    </div>
+    </div>  
   );
 }
 
