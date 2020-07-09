@@ -19,11 +19,13 @@
 
 @media screen and (max-width: 1000px) {
   .Registration{
-    overflow-y: hidden;
+    overflow-y: hidden !important;
+   
     width : 200vw;
     flex-direction: row-reverse;
     .advocacy-wrapper, .signup-wrapper {
       width : 50%;
+      height :90vh;
     }
   } 
 }

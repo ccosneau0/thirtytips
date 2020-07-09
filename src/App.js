@@ -25,7 +25,7 @@ const App = () => {
           </div>
           
           <button className="btn-log"> <i className="icon-avatared"></i> <a href={"/registration"} >crée ton compte</a></button>
-          <p className="userLink">Tu as déja un compte ?  <a href='/ConnexionUser'><strong>Log in</strong></a></p>
+          <p className="userLink">Tu as déja un compte ?  </p>  <a href={'/ConnexionUser'}><strong>Log in</strong></a>
         </div>
        
         <div className="gris"> </div>

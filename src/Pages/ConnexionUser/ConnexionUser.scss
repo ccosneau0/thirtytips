@@ -24,10 +24,12 @@
     width : 100vw;
     overflow-y: hidden ;
     padding-top: 50px;
+    align-items: center;
     .advocacy-wrapper {
       display: none;
     }
     .user-wrapper{
+      margin-top: 50px;
       width: 100%;
     }
   } 
