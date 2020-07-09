@@ -3,54 +3,101 @@ import Valided from '../../images/Valided.png';
 import Bubbles from '../../images/bubbles.png';
 
 
-
-const UserInfo = () => {
+const UserInfo = (props) => {
   
   const axios = require('axios');
+
+  const [result, setResult] = useState();
+  let [ steps, setSteps ] = useState(0);
+  
   let [ userName, setUserName ] = useState('');
   let [ challenge, setChallenge ] = useState('');
-  let [day, setDay] = useState(1);
-  let handleChange = () => {
-    if (day < 30) {
-      setDay(day + 1);
-    }
-  }
-  const DayContext = React.createContext(day);
+
+  let [ stepId, setStepId ] = useState('');
+  let [ stepName, setStepName ] = useState('');
   
+
   
 
   useEffect( () => {
+
+    async function getData() {
+      let dataGet = await axios({
+        method: 'post',
+        url: 'https://radiant-anchorage-47441.herokuapp.com/json/challenge/getter',
+        responseType: 'json',
+        data: {
+          user_id: 1
+        }
+      })
+        .then(function (response) {
+          let result = response.data[0].step;
+          let userName = response.data[ steps ].id
+          setResult(result);
+          setUserName(userName);
+          setSteps(steps = result.length + 1);
+          console.log('resultat requette step : ' + steps);
+        })
+        .catch(function (error) { 
+          console.log(error);
+        });
+    }
+    getData();
+
     async function fetchData() {
       let dataFetch = await axios({
         method: 'get',
-        url: 'https://jsonplaceholder.typicode.com/users',
-        responseType: 'json'
+        url: 'https://radiant-anchorage-47441.herokuapp.com/json/challenge',
+        responseType: 'json',
       })
         .then(function (response) {
-          let userName = response.data[0].name;
-          let challenge = response.data[ day ].website;
-          console.log(challenge);
-          setUserName(userName);
+          let challenge = response.data[ steps ].content;
           setChallenge(challenge);
+          let stepId = response.data[ steps ].step.id;
+          setStepId(stepId);
+          let stepName = response.data[ steps ].step.name;
+          setStepName(stepName);
+          console.log('userName : ' + userName);
+          console.log('challenge : ' + challenge);
+          console.log('stepId : ' + stepId);
+          console.log('stepName : ' + stepName);
         })
-        .catch(function (error) {
+        .catch(function (error) { 
           console.log(error);
         });
     }
     fetchData();
-  },[ day ])
 
+    // async function updateData() {
+    //   let dataUpdate = await axios({
+    //     method: 'catch',
+    //     url: 'https://radiant-anchorage-47441.herokuapp.com/json/challenge/setter',
+    //     responseType: 'json',
+    //     data: {
+    //       user_id: 1,
+    //       step_id: 1
+    //     }
+    //   })
+    //     .catch(function (error) { 
+    //       console.log(error);
+    //     });
+    // }
+    // updateData();
+    
+  },[ steps ])
 
-  
-
- 
+  let handleChange = () => {
+    if (steps < 29) {
+      setSteps(steps + 1);
+    }
+  }
 
    
   return (
     <section className="user-info">
       <img className="bubbles" src={ Bubbles } alt="bulles de couleurs"/>
       <p className="step">
-        Step <span className="step-number">{ day }</span>
+        Step <span className="step-number">{ steps }</span>
       </p>
       <h2 className="user-name">
         Salut { userName } 

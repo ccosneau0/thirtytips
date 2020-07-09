@@ -9,11 +9,11 @@ const ToKnow = () => {
     async function fetchData() {
       let dataFetch = await axios({
         method: 'get',
-        url: 'https://jsonplaceholder.typicode.com/comments',
+        url: 'https://radiant-anchorage-47441.herokuapp.com/json/challenge',
         responseType: 'json'
       })
         .then(function (response) {
-          toKnow = response.data[0].body;
+          toKnow = response.data[0].toKnow;
           setToKnow(toKnow);
         })
         .catch(function (error) {
