@@ -5,22 +5,39 @@ const axios = require('axios');
 
 const DashArticle = () => {
 
-  let [ todayArticlesTitle, setTodayArticlesTitle ] = useState('');
-  let [ todayArticlesContent, setTodayArticlesContent ] = useState('');
+  let [ todayArticlesTitleOne, setTodayArticlesTitleOne ] = useState('');
+  let [ todayArticlesAuthorOne, setTodayArticlesAuthorOne ] = useState('');
+  let [ todayArticlesContentOne, setTodayArticlesContentOne ] = useState('');
+  let [ todayArticlesLinkOne, setTodayArticlesLinkOne ] = useState('');
+  let [ todayArticlesTitleTwo, setTodayArticlesTitleTwo ] = useState('');
+  let [ todayArticlesAuthorTwo, setTodayArticlesAuthorTwo ] = useState('');
+  let [ todayArticlesContentTwo, setTodayArticlesContentTwo ] = useState('');
+  let [ todayArticlesLinkTwo, setTodayArticlesLinkTwo ] = useState('');
 
   useEffect( () => {
     async function fetchData() {
       let dataFetch = await axios({
         method: 'get',
-        url: 'https://jsonplaceholder.typicode.com/posts',
+        url: 'https://radiant-anchorage-47441.herokuapp.com/json/challenge',
         responseType: 'json'
       })
         .then(function (response) {
-          let todayArticlesTitle = response.data[2].title;
-          let todayArticlesContent = response.data[0].body;
-          setTodayArticlesTitle(todayArticlesTitle);
-          setTodayArticlesContent(todayArticlesContent);
-          console.log(todayArticlesTitle);
+          let todayArticlesTitleOne = response.data[0].news[0].name;
+          let todayArticlesAuthorOne = response.data[0].news[0].author;
+          let todayArticlesContentOne = response.data[0].news[0].content;
+          let todayArticlesLinkOne = response.data[0].news[0].link;
+          setTodayArticlesTitleOne(todayArticlesTitleOne);
+          setTodayArticlesAuthorOne(todayArticlesAuthorOne);
+          setTodayArticlesContentOne(todayArticlesContentOne);
+          setTodayArticlesLinkOne(todayArticlesLinkOne);
+          let todayArticlesTitleTwo = response.data[0].news[1].name;
+          let todayArticlesAuthorTwo = response.data[0].news[1].author;
+          let todayArticlesContentTwo = response.data[0].news[1].content;
+          let todayArticlesLinkTwo = response.data[0].news[1].link;
+          setTodayArticlesTitleTwo(todayArticlesTitleTwo);
+          setTodayArticlesAuthorTwo(todayArticlesAuthorTwo);
+          setTodayArticlesContentTwo(todayArticlesContentTwo);
+          setTodayArticlesLinkTwo(todayArticlesLinkTwo);
         })
         .catch(function (error) {
           console.log(error);
@@ -36,23 +53,23 @@ const DashArticle = () => {
       <div className="article-cards">
         <div className="article-card">
           <h3 className="article-title">
-            { todayArticlesTitle }
+            { todayArticlesTitleOne }
           </h3>
-          <p className="article-author">GreenPeace</p>
+          <p className="article-author">{ todayArticlesAuthorOne }</p>
           <p className="article-content">
-            { todayArticlesContent }
+            { todayArticlesContentOne }
           </p>
-          <button className="btn-to-article">Lire la suite</button>
+          <button className="btn-to-article"><a href={ todayArticlesLinkOne }>Lire la suite</a></button>
         </div>
         <div className="article-card">
           <h3 className="article-title">
-            { todayArticlesTitle }
+            { todayArticlesTitleTwo }
           </h3>
-          <p className="article-author">GreenPeace</p>
+          <p className="article-author">{ todayArticlesAuthorTwo }</p>
           <p className="article-content">
-            { todayArticlesContent }
+            { todayArticlesContentTwo }
           </p>
-          <button className="btn-to-article">Lire la suite</button>
+          <button className="btn-to-article"><a href={ todayArticlesLinkTwo }>Lire la suite</a></button>
         </div>
       </div>
       
