@@ -1,5 +1,6 @@
 @import"./../../../style/bigStyle.scss";
 
+
 .Advocacy{
   background :  #F7F8FA;
   align-items: center;
@@ -31,6 +32,10 @@
     .wording-wrapper{
       width: 500px;
       text-align: center;
+      h4{
+        line-height: 80px;
+      }
+      p{line-height: 26px;}
     }  
   } 
 } 
@@ -44,6 +49,38 @@
   margin-top: -4px;
 
 }
+.react-slideshow-container .nav span{
+  //background: $Grey !important;
+  border: solid 1px black!important ;
+  
+}
+
+.react-slideshow-container .nav{
+  background:#ADE1D1!important;
+}
+.react-slideshow-container .nav:hover {
+  background: white!important;
+  color: #666;
+}
+
+.react-slideshow-container .nav:first-of-type span {
+  margin-left: 5px;
+  border-right: 0!important;
+  border-top: 0!important;
+}
+
+.react-slideshow-container .nav:last-of-type {
+  margin-left: -30px!important;
+}
+
+.react-slideshow-container .nav:last-of-type span {
+  margin-right: 5px;
+  border-left: none !important;
+  border-bottom: none !important;
+}
+
+
+
 
 @media screen and (max-width: 800px ){
   .Advocacy{

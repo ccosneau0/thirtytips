@@ -24,6 +24,21 @@ And css methodology :
 
 Aussi, bigStyle est une grosse valise de style que nous importons dans toutes les petites feuilles de styles dédiées à chaque component. Gros avantage : moins de lignes de code similaires et intempestives, valeurs similaires dans chaque component, un gain de temps notable. Et surtout : nous pouvons surcharger au besoin, et si une modification design émerge au dernier moment et qu'elle s'applique sur de nombreux components (exemple: les boutons qui doivent changer d'aspect - de padding/ couleur/ etc -), alors nous procédons à ce changement directement dans la feuille de style dédiée aux boutons : => * magie * tous les boutons sur l'ensemble du projet auront changé- prendrons la nouvelle valeur.
 
+## Division des tâches :
+
+- Alice Gordwin a réalisé l'architecture de la stack front, particulirèment du style, 
+ainsi que la  réalisation des pages :
+* Landing
+* Inscription (registration) 
+* Connexion 
+* Progression 
+
+- Charles Cosneau à quant a lui réalisé la page Dashboard ainsi que la dynamisation de cette dernière, ainsi que la mise en ligne du site via Netlify.
+
+## Remarques:
+* Il aurait été judicieux de mettre en place Redux, pour la meilleure circulation des données entre les différents components. Ceci aurait pu etre fais si nous n'avions pas reçu les informations du back *au compte-gouttes* 48h avant le rendu final.
+
+* Il est certain que le manque de communication à entraveé la bonne progression du travail.
 
 ## Available Scripts
 

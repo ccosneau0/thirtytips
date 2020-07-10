@@ -16,13 +16,12 @@ const slideImages = [
 ];
 
 const properties = {
-  duration: 6000,
-  transitionDuration: 500,
+  duration: 4000,
+  transitionDuration: 400,
   infinite: true,
   indicators: true,
   arrows: true,
   pauseOnHover: true,
-  //marginLeft: 300,
   onChange: (oldIndex, newIndex) => {
     console.log(`slide transition from ${oldIndex} to ${newIndex}`);
   }
