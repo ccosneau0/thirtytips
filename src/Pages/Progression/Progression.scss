@@ -45,9 +45,6 @@
 .profile-container{
   margin-top: 20px;
   margin-left : 40px;
-  /* width: 200px;
-  height: 59px;
-  background : black; */
 }
 
 .arrow{
@@ -65,4 +62,9 @@
   margin-left: 415px;
   margin-top: 10px;
   z-index: -2;
+}
+@media screen and (max-width: 800px ){
+  .btn-to-progress{
+    display: none;
+  }
 }

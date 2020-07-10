@@ -6,23 +6,43 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
- // height: 720px;
-  padding: 40px 30px 140px 30px;
+  width: 100%;
+  padding: 40px 0 140px 30px;
   
   p{
-    font-family: $KMedium;
+    font-family: $KMedium; 
     text-align: center;
     font-size: 14px;
     color: $Grey;
+    
+    
   }
   .signup-logo{
     width: 39%;
   }
 
+  .signup-logo, h3{
+    margin-left: -40px;
+  }
   .signup-policy{
     font-family: $KRegular;
+    margin-left : -70px;
+    margin-bottom: 20px;
+    line-height: 25px;
   }
-  /* .btn-log.icon-avatared::before{
-    color: white !important;
-  } */
+  
+  a{
+    color :black
+  } 
+}
+
+
+
+@media screen and (max-width: 800px) {
+  .Signup {
+    padding-top: 20px; 
+  }
+  .signup-logo, h3{
+    margin-left: -40px;
+  }
 }

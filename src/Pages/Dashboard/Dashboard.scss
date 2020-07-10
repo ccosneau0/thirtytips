@@ -8,6 +8,7 @@ $onevh: 1vh;
 $twovh:2vh;
 $threevh: 3vh;
 $radiusNine: 9px;
+$boxShadow: 0px 0px 6px 3px rgba(0,0,0,0.10);
 
 // TODO: Progess --> taille font/espace responsive + espace du button à modif (margin) / revoir zone tips / box-shadow !!!!!
 
@@ -21,7 +22,7 @@ $radiusNine: 9px;
 .dashboard-second{
   width: 35vw;
   margin-left: $threevw;
-  box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.10);
+  box-shadow: $boxShadow;
   border-radius: $radiusNine;
 }
 
@@ -42,7 +43,7 @@ $radiusNine: 9px;
   width: 59vw;
   height: 29vh;
   border-radius: $radiusNine;
-  box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.10);
+  box-shadow: $boxShadow;
 }
 
 .step{
@@ -93,7 +94,7 @@ $radiusNine: 9px;
   width: 59vw;
   height: 7vh;
   border-radius: $radiusNine;
-  box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.10);
+  box-shadow: $boxShadow;
   margin-left: 3vw;
   margin-top: $threevh;
 }
@@ -170,7 +171,7 @@ $radiusNine: 9px;
   width: 28.5vw;
   height: 28vh;
   border-radius: $radiusNine;
-  box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.10);
+  box-shadow: $boxShadow;
 }
 
 .article-title{
@@ -225,7 +226,7 @@ $radiusNine: 9px;
 
 .number-challenge-card{
   margin-top: 2vh;
-  box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.10);
+  box-shadow: $boxShadow;
   border-radius: $radiusNine;
   height: 15vh;
   display: flex;

@@ -4,6 +4,7 @@ import App from "./App";
 import Registration from "./Pages/Registration/Registration";
 import Dashboard from "./Pages/Dashboard/Dashboard";
 import Progression from "./Pages/Progression/Progression";
+import ConnexionUser from "./Pages/ConnexionUser/ConnexionUser";
 class Routing extends Component {
   render() {
     return (
@@ -12,7 +13,8 @@ class Routing extends Component {
           <Route exact path='/' component={App} />
           <Route exact path='/registration' component={Registration} />
           <Route exact path='/dashboard'  component={Dashboard} />
-          <Route exact path='/Progression'  component={Progression} />
+          <Route exact path='/Progression'  component={Progression} /> 
+          <Route exact path='/ConnexionUser'  component={ConnexionUser} /> 
         </Switch>
       </BrowserRouter>
     )

@@ -1,0 +1,36 @@
+@import '../../style/bigStyle.scss';
+//@import "../Registration/Registration.scss";
+
+.ConnexionUser {
+  display: flex;
+  flex-direction: row; 
+  height :100vh;
+  width : 100vw;
+  overflow-y: hidden;
+}
+  
+.user-wrapper{
+  width: 40%;
+}
+  
+.advocacy-wrapper{
+  width: 60%;
+  background:#F7F8FA;
+}
+ 
+@media screen and (max-width: 1000px) {
+  .ConnexionUser{
+    height :90vh;
+    width : 100vw;
+    overflow-y: hidden ;
+    padding-top: 50px;
+    align-items: center;
+    .advocacy-wrapper {
+      display: none;
+    }
+    .user-wrapper{
+      margin-top: 50px;
+      width: 100%;
+    }
+  } 
+} 

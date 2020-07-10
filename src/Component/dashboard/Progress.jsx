@@ -42,7 +42,7 @@ const Progess = () => {
         <Maison />
         <Consommation />
         <Numerique />
-        <button className="btn-to-progress">Voir le détail des thèmes</button>
+        <button className="btn-to-progress"> <a href='/Progression'>Voir le détail des thèmes</a></button>
       </div>
     </section>
   )
