@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect } from "react";
 import Valided from '../../images/Valided.png';
 import Bubbles from '../../images/bubbles.png';
 
@@ -92,7 +92,7 @@ const UserInfo = (props) => {
     }
   }
 
-  const name = useRef(userName);
+  // const name = useRef(userName);
 
    
   return (

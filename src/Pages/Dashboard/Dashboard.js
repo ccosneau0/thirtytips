@@ -7,7 +7,7 @@ import Progress from '../../Component/Dashboard/Progress';
 import './Dashboard.scss';
 
 
-const Dashboard = (props) => {
+const Dashboard = () => {
 
   let step = 0;
 
