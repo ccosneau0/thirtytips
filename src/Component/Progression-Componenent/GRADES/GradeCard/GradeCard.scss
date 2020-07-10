@@ -15,23 +15,72 @@
 }
   
 .listing{
-  background: plum;
+  //background: plum;
   height: 100%;
+  margin-top: 50px;
 }
   
 .illu-wrapper{
   height: 100%;
-  background-color: paleturquoise;
+  //background-color: paleturquoise;
 }
-  
+ .squared{
+   background :blueviolet;
+   height: 70px;
+   width: 70px;
+   border-radius: 14px;
+   display: flex;
+   justify-content:center;
+   margin-top: 20px;
+
+   i{
+     margin-top: 20px;
+     font-size: 30px;
+   }
+   
+ } 
+
 .circle{
   height: 80.45px;
   width: 80.45px;
-  border-radius: 80.45px;
-  border: 7px solid blueviolet;
-  text-align: center;
-  
+  //background: burlywood;
+  position: relative;
 }
-.circle::after{
+.circle-box{
+ /*  position: absolute;
+  background-color: red;
+  height: 80.45px;
+  width: 80.45px;
+  margin-left: 10px;
+  margin-top: 20px; */
+}
+.circle svg circle {
+  position: relative;
+  height: 80.45px;
+  width: 80.45px;
+  transform: translate(4px,15px);
+  fill: none ;
+  stroke-width: 5;
+  stroke:rgba(0, 0, 0, 0.119);
+  stroke-dasharray: 440;
+  stroke-dashoffset: 440;
+  stroke-linecap: round;
+}
+
+.circle svg circle:first-child{
+  stroke-dashoffset: 0;
+  stroke: $LightGrey ;
+} 
+
+ .circle svg circle:last-child{
+  stroke-dasharray: 250;
+  stroke: $GreenTea ;
+}   
+
+.Number{
+
+  position: absolute;
+  margin-top: -117px;
+  margin-left: 19px;
 
 }
