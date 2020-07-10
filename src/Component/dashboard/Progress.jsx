@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import Dechets from './progress/Dechets';
-import StyleVie from './progress/StyleVie';
-import Maison from './progress/Maison';
-import Consommation from './progress/Consommation';
-import Numerique from './progress/Numerique';
+import Dechets from './Progress/Dechets';
+import StyleVie from './Progress/StyleVie';
+import Maison from './Progress/Maison';
+import Consommation from './Progress/Consommation';
+import Numerique from './Progress/Numerique';
 import Logo from '../../images/LOGO.svg';
 import NumberChallenge from './NumberChallenge';
 

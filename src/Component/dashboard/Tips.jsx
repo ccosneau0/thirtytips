@@ -16,11 +16,11 @@ const Tips = () => {
         responseType: 'json'
       })
         .then(function (response) {
-          let todayTipsOne = response.data[0].tips[0].content;
+          let todayTipsOne = response.data[6].tips[0].content;
           setTodayTipsOne(todayTipsOne);
-          let todayTipsTwo = response.data[0].tips[1].content;
+          let todayTipsTwo = response.data[6].tips[1].content;
           setTodayTipsTwo(todayTipsTwo);
-          let todayTipsThree = response.data[0].tips[2].content;
+          let todayTipsThree = response.data[6].tips[2].content;
           setTodayTipsThree(todayTipsThree);
         })
         .catch(function (error) {

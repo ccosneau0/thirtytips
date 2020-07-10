@@ -8,6 +8,7 @@ $onevh: 1vh;
 $twovh:2vh;
 $threevh: 3vh;
 $radiusNine: 9px;
+$boxShadow: 0px 0px 6px 3px rgba(0,0,0,0.10);
 
 // TODO: Progess --> taille font/espace responsive + espace du button à modif (margin) / revoir zone tips / box-shadow !!!!!
 
@@ -21,7 +22,7 @@ $radiusNine: 9px;
 .dashboard-second{
   width: 35vw;
   margin-left: $threevw;
-  box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.10);
+  box-shadow: $boxShadow;
   border-radius: $radiusNine;
 }
 
@@ -42,7 +43,7 @@ $radiusNine: 9px;
   width: 59vw;
   height: 29vh;
   border-radius: $radiusNine;
-  box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.10);
+  box-shadow: $boxShadow;
 }
 
 .step{
@@ -91,8 +92,9 @@ $radiusNine: 9px;
 // ToKnow
 .toknow{
   width: 59vw;
+  height: 7vh;
   border-radius: $radiusNine;
-  box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.10);
+  box-shadow: $boxShadow;
   margin-left: 3vw;
   margin-top: $threevh;
 }
@@ -125,7 +127,7 @@ $radiusNine: 9px;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  font-size: 16px;
+  font-size: 10px;
   text-align: center;
   list-style: none;
   font-family: $KLight;
@@ -162,14 +164,14 @@ $radiusNine: 9px;
 .article-cards{
   display: flex;
   justify-content: space-between;
-  margin-top: $onevh;
+  margin-top: $twovh;
 }
 
 .article-card{
   width: 28.5vw;
   height: 28vh;
   border-radius: $radiusNine;
-  box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.10);
+  box-shadow: $boxShadow;
 }
 
 .article-title{
@@ -191,8 +193,13 @@ $radiusNine: 9px;
   font-family: $KLight;
   margin-left: $twovw;
   width: 23vw;
+  height: 8.7vh;
   margin-top: $onevh;
   margin-bottom: $twovh;
+  overflow: hidden;
+}
+.btn-to-article-text{
+  font-size: 19px;
 }
 // End DashArticle
 
@@ -219,7 +226,7 @@ $radiusNine: 9px;
 
 .number-challenge-card{
   margin-top: 2vh;
-  box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.10);
+  box-shadow: $boxShadow;
   border-radius: $radiusNine;
   height: 15vh;
   display: flex;
@@ -246,7 +253,7 @@ $radiusNine: 9px;
   width: 12vw;
   position: absolute;
   right: 0vw;
-  top: 20vh;
+  top: 18vh;
 }
 // End NumberChallenge
 
@@ -261,7 +268,7 @@ $radiusNine: 9px;
 
 .progress-icone{
   width: 12%;
-  margin-top: $twovh;
+  margin-top: $threevh;
 }
 
 .progress-info{
@@ -271,7 +278,7 @@ $radiusNine: 9px;
 .progress-title{
   font-size: 19px;
   font-family: $KBold;
-  margin-top: $twovh;
+  margin-top: 3.5vh;
 }
 
 .progress-content{
@@ -280,4 +287,49 @@ $radiusNine: 9px;
   color: #DEDEDE;
   width: 21vw;
   margin-top: 0.7vh;
+}
+
+// MOBILE
+
+@media screen and (max-width: 700px) {
+  .user-info{
+    width: 94vw;
+    height: 37vh;
+  }
+  .btn-valided{
+    width: 90vw;
+    padding: 15vw 10vw 20vh 10vh;
+  }
+  .toknow{
+    width: 94vw;
+    height: 10vh;
+  }
+  .tips{
+    width: 100vw;
+    height: 30vh;
+    font-size: 8px;
+    margin-left: 0;
+  }
+  .tips-content{
+    width: 29vw;
+    height: 23vh;
+  }
+  .tips-content-text{
+    width: 22vw;
+  }
+  .bubbles{
+    display: none;
+  }
+  .dashboard-second{
+    display: none;
+  }
+  .article{
+    display: none;
+  }
+  .logo{
+    display: block;
+    position: absolute;
+    top: 5vh;
+    right: 10vw;
+  }
 }

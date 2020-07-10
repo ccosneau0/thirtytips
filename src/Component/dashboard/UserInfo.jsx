@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import Valided from '../../images/Valided.png';
 import Bubbles from '../../images/bubbles.png';
 
@@ -32,7 +32,7 @@ const UserInfo = (props) => {
       })
         .then(function (response) {
           let result = response.data[0].step;
-          let userName = response.data[ steps ].id
+          let userName = response.data[ steps ].name;
           setResult(result);
           setUserName(userName);
           setSteps(steps = result.length + 1);
@@ -75,7 +75,7 @@ const UserInfo = (props) => {
     //     responseType: 'json',
     //     data: {
     //       user_id: 1,
-    //       step_id: 1
+    //       step_id: stepId
     //     }
     //   })
     //     .catch(function (error) { 
@@ -91,6 +91,8 @@ const UserInfo = (props) => {
       setSteps(steps + 1);
     }
   }
+
+  const name = useRef(userName);
 
    
   return (
