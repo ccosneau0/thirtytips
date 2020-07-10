@@ -15,7 +15,7 @@ const App = () => {
     <div className="App">
          
         <div className="landing-cta-container">
-          <img className="logo" src={Logo} alt="okok"></img>
+          <img className="logo-app" src={Logo} alt="okok"></img>
          
           <div className="text-wrapper">
             <p>  
