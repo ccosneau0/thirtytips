@@ -6,6 +6,7 @@ import Consommation from './Progress/Consommation';
 import Numerique from './Progress/Numerique';
 import Logo from '../../images/LOGO.svg';
 import NumberChallenge from './NumberChallenge';
+import ConnectedUser from './ConnectedUser';
 
 const Progess = () => {
 
@@ -34,6 +35,7 @@ const Progess = () => {
   return(
     <section>
       <img className="logo" src={ Logo } alt="logo trente steps"/>
+      <ConnectedUser />
       <NumberChallenge />
       <div className="progress">
         <h4>Ma progression</h4>

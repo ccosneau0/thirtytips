@@ -60,14 +60,14 @@ $boxShadow: 0px 0px 6px 3px rgba(0,0,0,0.10);
 
 .user-name{
   margin-left: $twovw;
-  margin-top: $threevh;
+  margin-top: 4vh;
 }
 
 
 .challenge{
   margin-left: $twovw;
-  margin-top: $twovh;
-  font-size: 36px;
+  margin-top: $threevh;
+  font-size: 30px;
   font-family: $KBold;
   margin-bottom: $twovh;
 }
@@ -82,10 +82,11 @@ $boxShadow: 0px 0px 6px 3px rgba(0,0,0,0.10);
 }
 
 .bubbles{
-  width: 35%;
+  width: 34%;
   position: absolute;
-  left: 28vw;
+  left: 30vw;
   top: $onevh;
+  opacity: 80%;
 }
 // End UserInfo
 
@@ -294,11 +295,11 @@ $boxShadow: 0px 0px 6px 3px rgba(0,0,0,0.10);
 @media screen and (max-width: 700px) {
   .user-info{
     width: 94vw;
-    height: 37vh;
+    height: 42vh;
   }
   .btn-valided{
     width: 90vw;
-    padding: 15vw 10vw 20vh 10vh;
+    text-align: center;
   }
   .toknow{
     width: 94vw;
