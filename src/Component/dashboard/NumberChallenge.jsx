@@ -3,7 +3,7 @@ import Logo from '../../images/LogoCut.png';
 
 const NumberChallenge = () => {
   
-  let number = 6;
+  let number = 8;
 
 
   return(
