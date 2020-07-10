@@ -32,7 +32,7 @@ const UserInfo = (props) => {
       })
         .then(function (response) {
           let result = response.data[0].step;
-          let userName = response.data[ steps ].id
+          let userName = response.data[ steps ].name;
           setResult(result);
           setUserName(userName);
           setSteps(steps = result.length + 1);

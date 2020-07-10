@@ -22,18 +22,18 @@ const DashArticle = () => {
         responseType: 'json'
       })
         .then(function (response) {
-          let todayArticlesTitleOne = response.data[0].news[0].name;
-          let todayArticlesAuthorOne = response.data[0].news[0].author;
-          let todayArticlesContentOne = response.data[0].news[0].content;
-          let todayArticlesLinkOne = response.data[0].news[0].link;
+          let todayArticlesTitleOne = response.data[6].news[0].name;
+          let todayArticlesAuthorOne = response.data[6].news[0].author;
+          let todayArticlesContentOne = response.data[6].news[0].content;
+          let todayArticlesLinkOne = response.data[6].news[0].link;
           setTodayArticlesTitleOne(todayArticlesTitleOne);
           setTodayArticlesAuthorOne(todayArticlesAuthorOne);
           setTodayArticlesContentOne(todayArticlesContentOne);
           setTodayArticlesLinkOne(todayArticlesLinkOne);
-          let todayArticlesTitleTwo = response.data[0].news[1].name;
-          let todayArticlesAuthorTwo = response.data[0].news[1].author;
-          let todayArticlesContentTwo = response.data[0].news[1].content;
-          let todayArticlesLinkTwo = response.data[0].news[1].link;
+          let todayArticlesTitleTwo = response.data[6].news[1].name;
+          let todayArticlesAuthorTwo = response.data[6].news[1].author;
+          let todayArticlesContentTwo = response.data[6].news[1].content;
+          let todayArticlesLinkTwo = response.data[6].news[1].link;
           setTodayArticlesTitleTwo(todayArticlesTitleTwo);
           setTodayArticlesAuthorTwo(todayArticlesAuthorTwo);
           setTodayArticlesContentTwo(todayArticlesContentTwo);
@@ -59,7 +59,7 @@ const DashArticle = () => {
           <p className="article-content">
             { todayArticlesContentOne }
           </p>
-          <button className="btn-to-article"><a href={ todayArticlesLinkOne }>Lire la suite</a></button>
+          <button className="btn-to-article"><a className="btn-to-article-text" href={ todayArticlesLinkOne }>Lire la suite</a></button>
         </div>
         <div className="article-card">
           <h3 className="article-title">
@@ -69,7 +69,7 @@ const DashArticle = () => {
           <p className="article-content">
             { todayArticlesContentTwo }
           </p>
-          <button className="btn-to-article"><a href={ todayArticlesLinkTwo }>Lire la suite</a></button>
+          <button className="btn-to-article"><a className="btn-to-article-text" href={ todayArticlesLinkTwo }>Lire la suite</a></button>
         </div>
       </div>
       
